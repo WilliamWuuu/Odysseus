@@ -1,2 +1,2 @@
 # Odysseus
-_“Odysseus survives not by strength alone, but by his own wit, courage, and unwavering will to return home.”_
+_“Odysseus survives not by strength alone, but by his own wit, courage, and unwavering will.”_
