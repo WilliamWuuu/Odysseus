@@ -1,10 +1,4 @@
-<!-- 需加载 KaTeX 库 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-
 # Computer Organization
-
-Created: 2025年5月11日 17:00
 
 # 第1章 计算机系统概论
 
@@ -185,7 +179,7 @@ $$
 
 1. 对阶
     
-    $$
+$$
 x = S_x \times 2^{j_x}, \quad y = S_y \times 2^{j_y}
 $$
 
