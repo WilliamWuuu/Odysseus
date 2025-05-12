@@ -188,6 +188,7 @@ $$
 $$
 \Delta j = j_x - j_y  
 $$
+
 $$
 \begin{aligned}
 > 0 \quad & y\ \text{向}\ x\ \text{看齐} & : S_y \to 1,\ j_y \to j_y + 1, \\
