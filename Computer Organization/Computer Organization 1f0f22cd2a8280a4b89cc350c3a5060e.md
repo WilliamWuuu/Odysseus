@@ -187,22 +187,15 @@ $$
 
 $$
 \Delta j = j_x - j_y = 
-\left\{ 
+\left\{
 \begin{array}{ll}
-0 & \\ 
->0 & \\ 
-<0 & 
-\end{array} 
+0 &  \\
+> 0 & S_y \to 1,\ j_y \to j_y + 1\text{）} \\
+< 0 &  S_x \to 1,\ j_x \to j_x + 1\text{）}
+\end{array}
 \right.
 $$
 
-对齐操作：
-$$
-\begin{array}{ll}
-y \to x: & S_y \to 1, \quad j_y + 1 \\
-x \to y: & S_x \to 1, \quad j_x + 1
-\end{array}
-$$
 
     
 2. 尾数求和   
