@@ -186,15 +186,14 @@ $$
 **对齐原则**：小阶向大阶看齐
 
 $$
-\Delta j = j_x - j_y = 
-$$
-
-$$
 \begin{aligned}
-> 0 & y\ \text{向}\ x\ \text{看齐} & : S_y \to 1,\ j_y \to j_y + 1, \\
-< 0 & x\ \text{向}\ y\ \text{看齐} & : S_x \to 1,\ j_x \to j_x + 1.
+\Delta j &= j_x - j_y \\
+= 0 \quad &\text{（已对齐）} \\
+> 0 \quad &\text{（$y$ 向 $x$ 看齐：} S_y \to 1,\ j_y \to j_y + 1\text{）} \\
+< 0 \quad &\text{（$x$ 向 $y$ 看齐：} S_x \to 1,\ j_x \to j_x + 1\text{）}
 \end{aligned}
 $$
+
 
 
 
