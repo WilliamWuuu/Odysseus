@@ -187,7 +187,7 @@ $$
 
 $$
 \Delta j = j_x - j_y = 
-\left\{
+\left{
 \right.
 $$
 
