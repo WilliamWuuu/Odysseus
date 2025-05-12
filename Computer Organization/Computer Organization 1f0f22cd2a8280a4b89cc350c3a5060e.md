@@ -190,7 +190,7 @@ $$
 $$
 
 $$
-> 0,\ S_y \rightarrow 1,\ j_y + 1,
+(> 0),\ S_y \rightarrow 1,\ j_y + 1,
 $$
 
 
