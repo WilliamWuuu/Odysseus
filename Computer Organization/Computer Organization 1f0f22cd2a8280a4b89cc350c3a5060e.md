@@ -1,3 +1,7 @@
+<!-- 需加载 KaTeX 库 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+
 # Computer Organization
 
 Created: 2025年5月11日 17:00
