@@ -187,8 +187,11 @@ $$
 
 $$
 \Delta j = j_x - j_y = 
-\left{
-\right.
+\begin{array}{ll}
+0 & \text{（已对齐）} \\
+> 0 & \text{（$y$ 向 $x$ 看齐：} S_y \to 1,\ j_y \to j_y + 1\text{）} \\
+< 0 & \text{（$x$ 向 $y$ 看齐：} S_x \to 1,\ j_x \to j_x + 1\text{）}
+\end{array}
 $$
 
 
