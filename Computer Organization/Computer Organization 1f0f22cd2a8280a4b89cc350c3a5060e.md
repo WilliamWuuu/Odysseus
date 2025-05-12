@@ -186,8 +186,8 @@ $$
 **对齐原则**：小阶向大阶看齐
 
 $$
-\Delta j = j_x - j_y = 
-0 &  \\
+\Delta j = j_x - j_y = \\
+0 & \text{(已对齐)}\\
 > 0 &  S_y \to 1,\ j_y \to j_y + 1\text{）} \\
 < 0 & S_x \to 1,\ j_x \to j_x + 1\text{）}
 $$
