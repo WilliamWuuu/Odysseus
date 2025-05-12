@@ -186,7 +186,9 @@ $$
 **对齐原则**：小阶向大阶看齐
 
 $$
-\Delta j = j_x - j_y = left\{
+\Delta j = j_x - j_y = 
+\left\{
+\right.
 $$
 
 
