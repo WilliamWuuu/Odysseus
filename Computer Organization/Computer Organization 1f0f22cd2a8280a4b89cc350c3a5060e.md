@@ -188,11 +188,9 @@ $$
 $$
 \Delta j = j_x - j_y
 $$
-$$
-\begin{aligned}
->0 \quad & y\ & : S_y \to 1,\ j_y \to j_y + 1
-\end{aligned}
-$$
+
+$> 0,\ S_y \rightarrow 1,\ j_y + 1$
+
 $$
 <0 \quad & x\ & : S_x \to 1,\ j_x \to j_x + 1
 $$
