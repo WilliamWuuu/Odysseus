@@ -187,13 +187,21 @@ $$
 
 $$
 \Delta j = j_x - j_y = 
-\left\{
+\left\{ 
 \begin{array}{ll}
-0 & \text{（已对齐）} \
-> 0 & \text{（$y$ 向 $x$ 看齐：} S_y \to 1,\ j_y \to j_y + 1\text{）} \
-< 0 & \text{（$x$ 向 $y$ 看齐：} S_x \to 1,\ j_x \to j_x + 1\text{）}
-\end{array}
+0 & \\ 
+>0 & \\ 
+<0 & 
+\end{array} 
 \right.
+$$
+
+对齐操作：
+$$
+\begin{array}{ll}
+y \to x: & S_y \to 1, \quad j_y + 1 \\
+x \to y: & S_x \to 1, \quad j_x + 1
+\end{array}
 $$
 
     
