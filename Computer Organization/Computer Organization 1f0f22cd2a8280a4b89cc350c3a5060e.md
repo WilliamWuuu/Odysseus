@@ -186,25 +186,26 @@ $$
 1. 对阶
     
     $$
-    x=S_x \times 2^{j_x}, y= S_y \times 2^{j_y} 
-    $$
-    
-    原则：小阶向大阶看齐
-    
-    $$
-    \Delta j = j_x - j_y = 
-    \begin{cases} 
-    0 & \\ 
-    >0 & \\ 
-    <0 & 
-    \end{cases}
-    
-    \begin{aligned}
-    \text{已对齐}\\
-    y \text{向} x \text{看齐} \quad &S_y \to 1, &j_y + 1, \\
-    x \text{向} y \text{看齐} \quad &S_x \to 1, &j_x + 1.
-    \end{aligned}
-    $$
+x = S_x \times 2^{j_x}, \quad y = S_y \times 2^{j_y}
+$$
+
+**对齐原则**：小阶向大阶看齐
+
+$$
+\Delta j = j_x - j_y = 
+\begin{cases} 
+0 \\ 
+>0 \\ 
+<0 
+\end{cases}
+$$
+
+$$
+\begin{aligned}
+y\ \text{向}\ x\ \text{看齐} & : S_y \to 1,\ j_y + 1, \\
+x\ \text{向}\ y\ \text{看齐} & : S_x \to 1,\ j_x + 1.
+\end{aligned}
+$$
     
 2. 尾数求和   
     
