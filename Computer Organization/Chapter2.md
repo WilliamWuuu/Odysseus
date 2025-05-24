@@ -255,13 +255,39 @@ $$
 -  计算结果的双符号位相同则代表没有溢出，不同则发生了溢出；
 -  原理与一位符号位判断溢出相同；
 
-#### 乘法运算
+#### 移位乘法
 ##### 原码乘法
 
 原码乘法：
 -  乘积的符号位单独处理，等于两个操作数的符号位取异或；
 -  数值部分等于两个操作数的数值部分（绝对值）相乘；
 -  用逻辑移位递归计算，用移位的次数判断乘法是否结束；
+
+设小数 $[x]_{\text{原}} = x_0 . x_1 \dots x_{n-1} x_n$ , $[y]_{\text{原}} = y_0 . y_1 \dots y_{n-1} y_n$ ，则有：
+
+$$
+\begin{align}
+[x \times y]_{\text{原}} &= (x_n \oplus y_n) . (0 . x_{n-1} \dots x_1 x_0 \times 0 . y_{n-1} \dots y_1 y_0) \\
+&= (x_n \oplus x_n) . (\left\vert x \right\vert \times \left\vert y \right\vert) 
+\end{align}
+$$
+
+小数原码乘法数值部分的递推公式：
+
+$$
+\begin{align}
+z_0 &= 0 \\
+z_1 &= 2^{-1}(y_n|x|+z_0) \\
+z_2 &= 2^{-1}(y_{n-1}|x|+z_1) \\
+&\vdots \\
+z_i &= 2^{-1}(y_{n+1-i}|x|+z_{i-1}) \\
+&\vdots \\
+z_n &= 2^{-1}(y_1|x|+z_{n-1}) 
+\end{align}
+$$
+$$
+\left\vert x \right\vert \times \left\vert y \right\vert = Z_n
+$$
 
 设整数 $[X]_{\text{原}} = X_n , X_{n-1} \dots X_1 X_0$ , $[Y]_{\text{原}} = Y_n , Y_{n-1} \dots Y_1 Y_0$ ，则有：
 
@@ -280,29 +306,21 @@ Z_0 &= 0 \\
 Z_1 &= 2^{-1}(Y_0|X|+Z_0) \\
 Z_2 &= 2^{-1}(Y_1|X|+Z_1) \\
 &\vdots \\
-Z_n &= 2^{-1}(Y_{n-1}|X|+Z_{n-1})
+Z_n &= 2^{-1}(Y_{n-1}|X|+Z_{n-1}) 
 \end{align}
 $$
+$$
+\left\vert X \right\vert \times \left\vert Y \right\vert = 2^n \times Z_n
+$$
 
-设小数 $[x]_{\text{原}} = x_n . x_{n-1} \dots x_1 x_0$ , $[y]_{\text{原}} = y_n . y_{n-1} \dots y_1 y_0$ ，则有：
+##### 补码乘法
+
+设小数 $[x]_{\text{原}} = x_0 . x_1 \dots x_{n-1} x_n$ , $[y]_{\text{原}} = y_0 . y_1 \dots y_{n-1} y_n$ ，则有：
 
 $$
 \begin{align}
-[x \times y]_{\text{原}} &= (x_n \oplus y_n) . (0 . x_{n-1} \dots x_1 x_0 \times 0 . y_{n-1} \dots y_1 y_0) \\
-&= (x_n \oplus x_n) . (\left\vert x \right\vert \times \left\vert y \right\vert)
+[x \times y]_{\text{补}} &= [x]_{\text{补}} \times (0 . y_1 \dots y_{n-1} y_n) - [x]_\text{补} \times y_0 \\
+&= [x]_{\text{补}} \times (0 . y_1 \dots y_{n-1} y_n) + [-x]_\text{补} \times y_0 
 \end{align}
 $$
 
-小数原码乘法数值部分的递推公式：
-
-$$
-\begin{align}
-z_0 &= 0 \\
-z_1 &= 2^{-1}(y_n|x|+z_0) \\
-z_2 &= 2^{-1}(y_{n-1}|x|+z_1) \\
-&\vdots \\
-z_i &= 2^{-1}(y_{n+1-i}|x|+z_{i-1}) \\
-&\vdots \\
-z_n &= 2^{-1}(y_1|x|+z_{n-1})
-\end{align}
-$$
