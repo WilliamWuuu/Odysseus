@@ -1,3 +1,6 @@
-# Abstract Algebra (2025 Summer)
-## Upload Log
-- 2025.07.06: Basics
+# Abstract Algebra
+COMP2010-Abstract Algebra, 2025 Summer at HITSZ
+
+## Contents
+- Basics (Knowledge you should know in advance: Set Theory, etc.)
+- Le Groupe
